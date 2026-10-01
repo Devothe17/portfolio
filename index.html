@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Personal Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1100px;
+            min-height: 100vh;
+            margin: auto;
+            background-color: #080808;
+            padding: 35px 50px;
+        }
+
+    
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 35px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #35a900;
+        }
+
+
+        .home {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 500px;
+        }
+
+        .home-text {
+            width: 45%;
+        }
+
+        .home-text h1 {
+            font-family: monospace;
+            font-size: 25px;
+            margin-bottom: 25px;
+        }
+
+        .home-text p {
+            font-family: monospace;
+            font-size: 12px;
+            line-height: 1.4;
+            max-width: 260px;
+        }
+
+        
+        .profile {
+            width: 230px;
+            height: 230px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: white;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 160px;
+            background-color: #35a900;
+            color: white;
+            text-decoration: none;
+            padding: 14px 45px;
+            font-family: monospace;
+            font-size: 13px;
+        }
+
+        .btn:hover {
+            background-color: #268000;
+        }
+
+        
+        .logos {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .logo {
+            width: 90px;
+            height: 35px;
+            border: 1px solid #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #555;
+            font-size: 12px;
+        }
+
+        
+        @media (max-width: 700px) {
+
+            .container {
+                width: 100%;
+                padding: 25px;
+            }
+
+            nav {
+                justify-content: center;
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+
+            nav a {
+                font-size: 14px;
+            }
+
+            .home {
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                gap: 50px;
+            }
+
+            .home-text {
+                width: 100%;
+            }
+
+            .home-text p {
+                margin: auto;
+            }
+
+            .profile {
+                width: 180px;
+                height: 180px;
+            }
+
+            .btn {
+                margin-top: 40px;
+            }
+
+            .logos {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#blog">BLOG</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+
+
+        
+        <section class="home">
+
+            <div class="home-text">
+
+                <h1>Nimpaye Devothe</h1>
+
+                <p>
+                    I'm passionate and hardworking
+                    young professional interested
+                    in technology, programming,
+                    and web development. I enjoy
+                    learning new skills, solving
+                    problem and creating useful
+                    digital solution.
+                </p>
+
+                <a href="#about" class="btn">
+                    Let's get started
+                </a>
+
+            </div>
+
+
+        
+            <div>
+                <img 
+                    src="./ChatGPT Image Sep 25, 2026, 11_50_09 AM.png" 
+                    alt="Nimpaye Devothe"
+                    class="profile"
+                >
+            </div>
+
+        </section>
+
+
+
+        <div class="logos">
+
+            <div class="logo">ClickUp</div>
+
+            <div class="logo">Dropbox</div>
+
+            <div class="logo">PAYCHEX</div>
+
+            <div class="logo">elastic</div>
+
+            <div class="logo">stripe</div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
